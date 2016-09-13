@@ -31,7 +31,7 @@ function enet_list_insert(iterator: ENetListIterator; data: pointer): ENetListIt
 function enet_list_remove(iterator: ENetListIterator): pointer; cdecl; external LIB_ENET;
 function enet_list_move(iterator: ENetListIterator; source: pointer; dest: pointer): ENetListIterator; cdecl; external LIB_ENET;
 
-function enet_list_size(list: PENetList): size_t; cdecl; external LIB_ENET;
+function enet_list_size(list: PENetList): csize_t; cdecl; external LIB_ENET;
 
 //TODO #define enet_list_begin(list) ((list) -> sentinel.next)
 //TODO #define enet_list_end(list) (& (list) -> sentinel)
